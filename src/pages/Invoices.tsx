@@ -7,7 +7,7 @@ const Invoices = () => {
   const [invoices, setInvoices] = useState<any[]>([]);
   const [total, setTotal] = useState<number>(0);
   const [page, setPage] = useState<number>(1);
-  const [limit, setLimit] = useState<number>(10);
+  const [limit] = useState<number>(10);
   const [admin,isAdmin]=useState<boolean>(false)
   const [filters, setFilters] = useState<any>({
     status: "",
